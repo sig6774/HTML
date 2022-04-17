@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total</title>
+
+    <style>
+        span.orange{
+            font-size: 1.2em;
+            color: orange;
+        }
+        /* span태그 안에 orange라는 클래스 */
+
+        div > ul > li {
+            font-weight: bold;
+        }
+        /* 자식 선택자라고 하며 태그 내부에 있는 요소를 선택하여 디자인을 적용하고 싶을때 사용 */
+
+        div > ul > .blue{
+            color: blue;
+        }
+        /* 후손 선택자라고 하며 후손 태그에서 특정 조건을 만족하는 것만 디자인 적용 */
+    </style>
+</head>
+<body>
+    <h1 class="red-color">Selector 연습</h1>
+
+    <div class="green">
+        <ul>
+            <li>사과</li>
+            <li>오렌지</li>
+            <li class="blue">파랑</li>
+        </ul>
+    </div>
+
+    <p class="red-color">토마토</p>
+    <span class="orange">오렌지</span>
+</body>
+</html>

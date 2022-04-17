@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxHorizontalAllignment</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 100px;
+            background: blue;
+            font-size: 30px;
+            color: #fff;
+            margin: 10px;
+            float: left;
+        }
+
+        .new-box{
+            width: 200px;
+            height: 150px;
+            background: orange;
+            clear:left;
+            /* claer를 사용하지 않으면 new-box위에 box가 있으므로 float은 떠있다는 것을 확인할 수 있음 */
+            /* 하지만 clear를 사용하게 되면 float의 성질을 지우는 기능을 말하며 float을 left로 지정했으면 clear도 left로 지정하여 float의 기능을 지울 수 있음 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+
+    <div class="new-box">5</div>
+</body>
+</html>

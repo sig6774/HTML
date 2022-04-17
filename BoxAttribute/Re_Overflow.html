@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .parent{
+            width: 300px;
+            height: 250px;
+            border: 4px solid black;
+            overflow: auto;
+        }
+        /* overflow는 자식태그들이 부모태그의 weight와 height의 크기보다 크게 되면 자동으로 스크롤바를 만들어 주는것 */
+
+        .child{
+            width: 100px;
+            height: 200px;
+            background: blue;
+            border: 4px solid orange;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+    </div>
+</body>
+</html>

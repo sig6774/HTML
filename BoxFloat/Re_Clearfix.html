@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clearfix</title>
+    <style>
+        .container{
+            width: 700px;
+            padding: 20px;
+            border: 3px solid blue;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellow;
+            font-size: 50px;
+            float:left;
+        }
+
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        /* 부모태그인 container는 float을 한 box를 인지 할 수 없으므로 clearfix를 통해서 자식태그인 것을 인지시켜야 함 */
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </div>
+</body>
+</html>

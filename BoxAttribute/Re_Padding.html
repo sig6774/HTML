@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border: 10px solid #000;
+            padding: 50px;
+
+            box-sizing: border-box;
+        }
+        /* 내부의 요소와 요소의 사이를 padding이라고 하며 padding값이 커질수록 box의 크기가 커짐
+            그렇기 때문에 box-sizing : border-box를 통해서 사전에 정의한 크기로 고정 */
+    </style>
+</head>
+<body>
+    <div class="box">Hello World!</div>
+</body>
+</html>
