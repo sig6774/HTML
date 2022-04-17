@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        td {
+            border: 1px solid blue;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <!-- table의 border의 숫자가 커질수록 선이 굵어짐  -->
+        <!-- tr이 행이고 td가 열 -->
+        <tr>
+            <td colspan="3">공연요금</td>
+        </tr>
+        <tr>
+            <td>구분</td>
+            <td>S석</td>
+            <td>VIP</td>
+        </tr>
+        <tr>
+            <td>성인</td>
+            <td>50,000</td>
+            <td>70,000</td>
+        </tr>
+        <tr>
+            <td>청소년</td>
+            <td>40,000</td>
+            <td>60,000</td>
+        </tr>
+        <tr>
+            <td>소인</td>
+            <td colspan="2">미취학 아동 일반 요금의 50%</td>
+            <!-- colspan : 열병합을 말하는 것 -->
+        </tr>
+        <tr>
+            <td rowspan="2">공연시간</td>
+            <td>1회</td>
+            <td>13:00 - 15:00</td>
+        </tr>
+        <tr>
+            <td>2회</td>
+            <td>17:00 - 19:00</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
